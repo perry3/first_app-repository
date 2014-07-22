@@ -37,7 +37,11 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# gem 'sqlite3', groups: %w(test development), require: false
-# gem 'pg', groups: %w(production), require: false
+group :development do
+  gem 'sqlite3'
+end
 
-# gem 'sqlite3'
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
