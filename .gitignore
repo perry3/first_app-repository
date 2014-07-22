@@ -14,3 +14,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# git remote add origin hEps://github.com/<Perry3>/first_app.git
+
+# git push -u origin master
+public/uploads
+tmp
+logs
