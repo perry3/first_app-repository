@@ -91,7 +91,11 @@ group :development, :test do
 
   # pryの色付けをしてくれる
   gem 'awesome_print'
-
+  
+ group :production do
+  gem'pg','0.12.2'
+ end
+ 
   # Rspec
   gem 'rspec-rails'
   gem 'rake_shared_context'
